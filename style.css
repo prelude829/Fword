@@ -1,0 +1,48 @@
+/* 1. 화면 전체 높이를 채우고 Flexbox로 완벽한 중앙 정렬 */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  font-family: sans-serif;
+}
+
+/* 2. 버튼 크기 및 스타일 */
+#toggleBtn {
+  padding: 36px 56px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#toggleBtn:hover {
+  background-color: #0056b3;
+}
+
+#toggleBtn:active {
+  transform: scale(0.98);
+}
+
+/* 3. 이미지 스타일 */
+#targetImg {
+  max-width: 90vw;
+  width: 400px;
+  height: auto;
+  margin-top: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 4. 숨김 처리 클래스 */
+.hidden {
+  display: none;
+}
